@@ -1,0 +1,62 @@
+﻿@model GWIZD2023.Models.ViewModel.AddAnimalRequest
+@{
+}
+
+<div class="bg-secondary bg-opacity-10 py-2">
+    <div class="container">
+        <h1>Add New Tag - Admin Functionality</h1>
+    </div>
+</div>
+
+<div class="container py-5">
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Color</label>
+            <input type="text" class="form-control" id="name" asp-for="Color" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Location Name</label>
+            <input type="text" class="form-control" id="displayName" asp-for="Location" />
+        </div>
+          <div class="mb-3">
+            <label class="form-label">Breed Name</label>
+            <input type="text" class="form-control" id="displayName" asp-for="Breed" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Date Name</label>
+            <input type="date" class="form-control" id="displayName" asp-for="Date" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Image Data (Base64)</label>
+            <textarea class="form-control" id="imageData" asp-for="ImageData"></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Details Name</label>
+            <input type="text" class="form-control" id="displayName" asp-for="Details" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Lost Name</label>
+            <input class="form-check-input" type="checkbox" value="" asp-for="Lost" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Found Name</label>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" asp-for="Found">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Wild Name</label>
+            <input class="form-check-input" type="checkbox" value="" asp-for="Wild" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">TypeOfAnimal Name</label>
+            <input type="text" class="form-control" id="displayName" asp-for="TypeOfAnimal" />
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+
+    </form>
+
+</div>
+
